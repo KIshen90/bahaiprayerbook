@@ -1,0 +1,43 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="PhoneApp1.obligatorypage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Canvas Background="White">
+        <Image Source="Assets/prayers2/short.jpg" Canvas.Left="30" Canvas.Top="35">
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/shortprayer.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+        </Image>
+        <Image Source="Assets/prayers2/long.jpg" Canvas.Left="30" Canvas.Top="250">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/longprayer.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+
+        <Image Source="Assets/prayers2/medium.jpg" Canvas.Left="245" Canvas.Top="35">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/mediumprayer.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+    </Canvas>
+</phone:PhoneApplicationPage>

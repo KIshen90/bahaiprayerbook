@@ -1,0 +1,1418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47C5D3F7-B661-40B7-B21B-8F4F38B7BC06}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhoneApp1</RootNamespace>
+    <AssemblyName>PhoneApp1</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PhoneApp1_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PhoneApp1.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="aboutpage.xaml.cs">
+      <DependentUpon>aboutpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="aidprayer1.xaml.cs">
+      <DependentUpon>aidprayer1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="aidprayer2.xaml.cs">
+      <DependentUpon>aidprayer2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="aidprayer3.xaml.cs">
+      <DependentUpon>aidprayer3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="aidprayer4.xaml.cs">
+      <DependentUpon>aidprayer4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="aidprayer5.xaml.cs">
+      <DependentUpon>aidprayer5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="americaprayer.xaml.cs">
+      <DependentUpon>americaprayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assembly.xaml.cs">
+      <DependentUpon>assembly.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer.xaml.cs">
+      <DependentUpon>assistanceprayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer2.xaml.cs">
+      <DependentUpon>assistanceprayer2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer3.xaml.cs">
+      <DependentUpon>assistanceprayer3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer4.xaml.cs">
+      <DependentUpon>assistanceprayer4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer5.xaml.cs">
+      <DependentUpon>assistanceprayer5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer6.xaml.cs">
+      <DependentUpon>assistanceprayer6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer7.xaml.cs">
+      <DependentUpon>assistanceprayer7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceprayer8.xaml.cs">
+      <DependentUpon>assistanceprayer8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="covenant.xaml.cs">
+      <DependentUpon>covenant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="departed.xaml.cs">
+      <DependentUpon>departed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="departprayer.xaml.cs">
+      <DependentUpon>departprayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="departprayer2.xaml.cs">
+      <DependentUpon>departprayer2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="departprayer3.xaml.cs">
+      <DependentUpon>departprayer3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="detachment.xaml.cs">
+      <DependentUpon>detachment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="detachment4.xaml.cs">
+      <DependentUpon>detachment4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="detachment5.xaml.cs">
+      <DependentUpon>detachment5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="detachmentprayer1.xaml.cs">
+      <DependentUpon>detachmentprayer1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="detachmentprayer2.xaml.cs">
+      <DependentUpon>detachmentprayer2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="detachmentprayer6.xaml.cs">
+      <DependentUpon>detachmentprayer6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="detactment3.xaml.cs">
+      <DependentUpon>detactment3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="evening.xaml.cs">
+      <DependentUpon>evening.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="evening1.xaml.cs">
+      <DependentUpon>evening1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="evening2.xaml.cs">
+      <DependentUpon>evening2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="evening3.xaml.cs">
+      <DependentUpon>evening3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="families.xaml.cs">
+      <DependentUpon>families.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="families1.xaml.cs">
+      <DependentUpon>families1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="families2.xaml.cs">
+      <DependentUpon>families2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="families3.xaml.cs">
+      <DependentUpon>families3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="families4.xaml.cs">
+      <DependentUpon>families4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="families5.xaml.cs">
+      <DependentUpon>families5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="firetablet.xaml.cs">
+      <DependentUpon>firetablet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="firmness1.xaml.cs">
+      <DependentUpon>firmness1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="firmness2.xaml.cs">
+      <DependentUpon>firmness2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="firmness3.xaml.cs">
+      <DependentUpon>firmness3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="firmness4.xaml.cs">
+      <DependentUpon>firmness4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="firmness5.xaml.cs">
+      <DependentUpon>firmness5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="forgiveness.xaml.cs">
+      <DependentUpon>forgiveness.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="forgiveness1.xaml.cs">
+      <DependentUpon>forgiveness1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="forgiveness2.xaml.cs">
+      <DependentUpon>forgiveness2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="forgiveness3.xaml.cs">
+      <DependentUpon>forgiveness3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="forgiveness4.xaml.cs">
+      <DependentUpon>forgiveness4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="forgiveness5.xaml.cs">
+      <DependentUpon>forgiveness5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fund.xaml.cs">
+      <DependentUpon>fund.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fund1.xaml.cs">
+      <DependentUpon>fund1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="graditute0.xaml.cs">
+      <DependentUpon>graditute0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="graditute1.xaml.cs">
+      <DependentUpon>graditute1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="graditute2.xaml.cs">
+      <DependentUpon>graditute2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="graditute3.xaml.cs">
+      <DependentUpon>graditute3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="healing.xaml.cs">
+      <DependentUpon>healing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="healing0.xaml.cs">
+      <DependentUpon>healing0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="healing1.xaml.cs">
+      <DependentUpon>healing1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="healing2.xaml.cs">
+      <DependentUpon>healing2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="healing3.xaml.cs">
+      <DependentUpon>healing3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="healing4.xaml.cs">
+      <DependentUpon>healing4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="intercalarydaytablet.xaml.cs">
+      <DependentUpon>intercalarydaytablet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="longprayer.xaml.cs">
+      <DependentUpon>longprayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mankind.xaml.cs">
+      <DependentUpon>mankind.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mankind0.xaml.cs">
+      <DependentUpon>mankind0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mankind1.xaml.cs">
+      <DependentUpon>mankind1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mankind3.xaml.cs">
+      <DependentUpon>mankind3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="marriage.xaml.cs">
+      <DependentUpon>marriage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="marriage0.xaml.cs">
+      <DependentUpon>marriage0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="marriage1.xaml.cs">
+      <DependentUpon>marriage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="marriage2.xaml.cs">
+      <DependentUpon>marriage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="marriage3.xaml.cs">
+      <DependentUpon>marriage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mediumprayer.xaml.cs">
+      <DependentUpon>mediumprayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="meeting.xaml.cs">
+      <DependentUpon>meeting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="meeting0.xaml.cs">
+      <DependentUpon>meeting0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="meeting1.xaml.cs">
+      <DependentUpon>meeting1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="meeting2.xaml.cs">
+      <DependentUpon>meeting2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="meeting3.xaml.cs">
+      <DependentUpon>meeting3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="meeting4.xaml.cs">
+      <DependentUpon>meeting4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="morning.xaml.cs">
+      <DependentUpon>morning.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="morning1.xaml.cs">
+      <DependentUpon>morning1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="morning2.xaml.cs">
+      <DependentUpon>morning2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="obligatorypage.xaml.cs">
+      <DependentUpon>obligatorypage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="aid.xaml.cs">
+      <DependentUpon>aid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="america.xaml.cs">
+      <DependentUpon>america.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="assistance.xaml.cs">
+      <DependentUpon>assistance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page7.xaml.cs">
+      <DependentUpon>Page7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pictures.xaml.cs">
+      <DependentUpon>pictures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="praise.xaml.cs">
+      <DependentUpon>praise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection.xaml.cs">
+      <DependentUpon>protection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection0.xaml.cs">
+      <DependentUpon>protection0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection1.xaml.cs">
+      <DependentUpon>protection1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection2.xaml.cs">
+      <DependentUpon>protection2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection3.xaml.cs">
+      <DependentUpon>protection3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection4.xaml.cs">
+      <DependentUpon>protection4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection5.xaml.cs">
+      <DependentUpon>protection5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection6.xaml.cs">
+      <DependentUpon>protection6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection7.xaml.cs">
+      <DependentUpon>protection7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection8.xaml.cs">
+      <DependentUpon>protection8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protection9.xaml.cs">
+      <DependentUpon>protection9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="qualities.xaml.cs">
+      <DependentUpon>qualities.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="qualities1.xaml.cs">
+      <DependentUpon>qualities1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shortprayer.xaml.cs">
+      <DependentUpon>shortprayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="specialpage.xaml.cs">
+      <DependentUpon>specialpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="spritual0.xaml.cs">
+      <DependentUpon>spritual0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="spritual1.xaml.cs">
+      <DependentUpon>spritual1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="steadfastness.xaml.cs">
+      <DependentUpon>steadfastness.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="steadfastness0.xaml.cs">
+      <DependentUpon>steadfastness0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="steadfastness1.xaml.cs">
+      <DependentUpon>steadfastness1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="steadfastness2.xaml.cs">
+      <DependentUpon>steadfastness2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="steadfastness3.xaml.cs">
+      <DependentUpon>steadfastness3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="steadfastness4.xaml.cs">
+      <DependentUpon>steadfastness4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tabletahmad.xaml.cs">
+      <DependentUpon>tabletahmad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tabletofmariner.xaml.cs">
+      <DependentUpon>tabletofmariner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tabletofvisitation1.xaml.cs">
+      <DependentUpon>tabletofvisitation1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tabletofvisitation2.xaml.cs">
+      <DependentUpon>tabletofvisitation2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teaching.xaml.cs">
+      <DependentUpon>teaching.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teaching0.xaml.cs">
+      <DependentUpon>teaching0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teaching1.xaml.cs">
+      <DependentUpon>teaching1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teaching2.xaml.cs">
+      <DependentUpon>teaching2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teaching3.xaml.cs">
+      <DependentUpon>teaching3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teaching4.xaml.cs">
+      <DependentUpon>teaching4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teaching5.xaml.cs">
+      <DependentUpon>teaching5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="test0.xaml.cs">
+      <DependentUpon>test0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="test1.xaml.cs">
+      <DependentUpon>test1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="test2.xaml.cs">
+      <DependentUpon>test2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="test3.xaml.cs">
+      <DependentUpon>test3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tests.xaml.cs">
+      <DependentUpon>tests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="triumph.xaml.cs">
+      <DependentUpon>triumph.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="triumph0.xaml.cs">
+      <DependentUpon>triumph0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="triumph1.xaml.cs">
+      <DependentUpon>triumph1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="triumph2.xaml.cs">
+      <DependentUpon>triumph2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="triumph3.xaml.cs">
+      <DependentUpon>triumph3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="triumph4.xaml.cs">
+      <DependentUpon>triumph4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="triumph5.xaml.cs">
+      <DependentUpon>triumph5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="unity0.xaml.cs">
+      <DependentUpon>unity0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="unity1.xaml.cs">
+      <DependentUpon>unity1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="visitmain.xaml.cs">
+      <DependentUpon>visitmain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="web.xaml.cs">
+      <DependentUpon>web.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth.xaml.cs">
+      <DependentUpon>youth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="youth1.xaml.cs">
+      <DependentUpon>youth1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth10.xaml.cs">
+      <DependentUpon>youth10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth2.xaml.cs">
+      <DependentUpon>youth2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth3.xaml.cs">
+      <DependentUpon>youth3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth4.xaml.cs">
+      <DependentUpon>youth4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth5.xaml.cs">
+      <DependentUpon>youth5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth6.xaml.cs">
+      <DependentUpon>youth6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth7.xaml.cs">
+      <DependentUpon>youth7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth8.xaml.cs">
+      <DependentUpon>youth8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youth9.xaml.cs">
+      <DependentUpon>youth9.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="aboutpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="aidprayer1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="aidprayer2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="aidprayer3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="aidprayer4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="aidprayer5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="americaprayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assembly.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistanceprayer8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="covenant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="departed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="departprayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="departprayer2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="departprayer3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="detachment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="detachment4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="detachment5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="detachmentprayer1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="detachmentprayer2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="detachmentprayer6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="detactment3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="evening.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="evening1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="evening2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="evening3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="families.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="families1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="families2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="families3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="families4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="families5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="firetablet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="firmness1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="firmness2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="firmness3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="firmness4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="firmness5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgiveness.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgiveness1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgiveness2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgiveness3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgiveness4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgiveness5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fund.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fund1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="graditute0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="graditute1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="graditute2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="graditute3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="healing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="healing0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="healing1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="healing2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="healing3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="healing4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="intercalarydaytablet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="longprayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mankind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mankind0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mankind1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mankind3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="marriage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="marriage0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="marriage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="marriage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="marriage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mediumprayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="meeting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="meeting0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="meeting1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="meeting2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="meeting3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="meeting4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="morning.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="morning1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="morning2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="obligatorypage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="aid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="america.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="assistance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pictures.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="praise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protection9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="qualities.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="qualities1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shortprayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="specialpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="spritual0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="spritual1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="steadfastness.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="steadfastness0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="steadfastness1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="steadfastness2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="steadfastness3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="steadfastness4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tabletahmad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tabletofmariner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tabletofvisitation1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tabletofvisitation2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="teaching.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="teaching0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="teaching1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="teaching2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="teaching3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="teaching4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="teaching5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="test0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="test1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="test2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="test3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="triumph.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="triumph0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="triumph1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="triumph2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="triumph3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="triumph4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="triumph5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="unity0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="unity1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="visitmain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="web.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="youth9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\About.jpg" />
+    <Content Include="Assets\aid.jpg" />
+    <Content Include="Assets\aidtest.jpg" />
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\america.jpg" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\bahai-star.png" />
+    <Content Include="Assets\covenant.jpg" />
+    <Content Include="Assets\departed.jpg" />
+    <Content Include="Assets\detachment.jpg" />
+    <Content Include="Assets\evening.jpg" />
+    <Content Include="Assets\families.jpg" />
+    <Content Include="Assets\forgiveness.jpg" />
+    <Content Include="Assets\healing.jpg" />
+    <Content Include="Assets\kishen1.jpg" />
+    <Content Include="Assets\images.jpg" />
+    <Content Include="Assets\mankind.jpg" />
+    <Content Include="Assets\marriage.jpg" />
+    <Content Include="Assets\meetings.jpg" />
+    <Content Include="Assets\morning.jpg" />
+    <Content Include="Assets\numbers\1.jpg" />
+    <Content Include="Assets\numbers\10.jpg" />
+    <Content Include="Assets\numbers\2.jpg" />
+    <Content Include="Assets\numbers\3.jpg" />
+    <Content Include="Assets\numbers\4.jpg" />
+    <Content Include="Assets\numbers\5.jpg" />
+    <Content Include="Assets\numbers\6.jpg" />
+    <Content Include="Assets\numbers\7.jpg" />
+    <Content Include="Assets\numbers\8.jpg" />
+    <Content Include="Assets\numbers\9.jpg" />
+    <Content Include="Assets\ObligatoryPrayers.jpg" />
+    <Content Include="Assets\Pictures.jpg" />
+    <Content Include="Assets\pictures\download %282%29.jpg" />
+    <Content Include="Assets\pictures\download %283%29.jpg" />
+    <Content Include="Assets\pictures\download %284%29.jpg" />
+    <Content Include="Assets\pictures\images %281%29.jpg" />
+    <Content Include="Assets\pictures\images %282%29.jpg" />
+    <Content Include="Assets\pictures\images.jpg" />
+    <Content Include="Assets\praiseandgraditute.jpg" />
+    <Content Include="Assets\prayers2\aboutpage.jpg" />
+    <Content Include="Assets\prayers2\ahmad.jpg" />
+    <Content Include="bahai-star.png" />
+    <Content Include="kishen.jpg" />
+    <Content Include="kishen2.png" />
+    <Resource Include="Assets\prayers2\btn_donateCC_LG.gif" />
+    <Content Include="Assets\prayers2\fire.jpg" />
+    <Content Include="Assets\prayers2\firetablet.jpg" />
+    <Content Include="Assets\prayers2\inter.jpg" />
+    <Content Include="Assets\prayers2\interclaryday.jpg" />
+    <Content Include="Assets\prayers2\long.jpg" />
+    <Content Include="Assets\prayers2\longprayer.jpg" />
+    <Content Include="Assets\prayers2\mariner.jpg" />
+    <Content Include="Assets\prayers2\marinertablet.jpg" />
+    <Content Include="Assets\prayers2\medium.jpg" />
+    <Content Include="Assets\prayers2\mediumprayer.jpg" />
+    <Content Include="Assets\prayers2\short.jpg" />
+    <Content Include="Assets\prayers2\shortprayer.jpg" />
+    <Content Include="Assets\prayers2\tableofvisitation.jpg" />
+    <Content Include="Assets\prayers2\tableofvisitation2.jpg" />
+    <Content Include="Assets\prayers2\tabletofahmad.jpg" />
+    <Content Include="Assets\prayers2\visitation.jpg" />
+    <Content Include="Assets\prayers\1prayer.jpg" />
+    <Content Include="Assets\prayers\2ndprayer.jpg" />
+    <Content Include="Assets\prayers\3rdprayer.jpg" />
+    <Content Include="Assets\prayers\4thprayer.jpg" />
+    <Content Include="Assets\prayers\5thprayer.jpg" />
+    <Content Include="Assets\prayers\assistance1.jpg" />
+    <Content Include="Assets\prayers\assistance3.jpg" />
+    <Content Include="Assets\prayers\assistance4.jpg" />
+    <Content Include="Assets\prayers\assistance5.jpg" />
+    <Content Include="Assets\prayers\assistance6.jpg" />
+    <Content Include="Assets\prayers\assistance7.jpg" />
+    <Content Include="Assets\prayers\assistance8.jpg" />
+    <Content Include="Assets\prayers\assitnace2.jpg" />
+    <Content Include="Assets\prayers\depart.jpg" />
+    <Content Include="Assets\prayers\depart1.jpg" />
+    <Content Include="Assets\prayers\depart2.jpg" />
+    <Content Include="Assets\prayers\detachment.jpg" />
+    <Content Include="Assets\prayers\detachment1.jpg" />
+    <Content Include="Assets\prayers\detachment2.jpg" />
+    <Content Include="Assets\prayers\detachment3.jpg" />
+    <Content Include="Assets\prayers\detachment4.jpg" />
+    <Content Include="Assets\prayers\detachment5.jpg" />
+    <Content Include="Assets\prayers\evening1.jpg" />
+    <Content Include="Assets\prayers\evening2.jpg" />
+    <Content Include="Assets\prayers\evening3.jpg" />
+    <Content Include="Assets\prayers\families1.jpg" />
+    <Content Include="Assets\prayers\families2.jpg" />
+    <Content Include="Assets\prayers\families3.jpg" />
+    <Content Include="Assets\prayers\families4.jpg" />
+    <Content Include="Assets\prayers\families5.jpg" />
+    <Content Include="Assets\prayers\forgiveness.jpg" />
+    <Content Include="Assets\prayers\forgiveness1.jpg" />
+    <Content Include="Assets\prayers\forgiveness2.jpg" />
+    <Content Include="Assets\prayers\forgiveness3.jpg" />
+    <Content Include="Assets\prayers\forgiveness4.jpg" />
+    <Content Include="Assets\prayers\frimness1.jpg" />
+    <Content Include="Assets\prayers\frimness2.jpg" />
+    <Content Include="Assets\prayers\frimness3.jpg" />
+    <Content Include="Assets\prayers\frimness4.jpg" />
+    <Content Include="Assets\prayers\frimness5.jpg" />
+    <Content Include="Assets\prayers\fund.jpg" />
+    <Content Include="Assets\prayers\generalp.jpg" />
+    <Content Include="Assets\prayers\graditute.jpg" />
+    <Content Include="Assets\prayers\graditute1.jpg" />
+    <Content Include="Assets\prayers\graditute2.jpg" />
+    <Content Include="Assets\prayers\graditute3.jpg" />
+    <Content Include="Assets\prayers\healing.jpg" />
+    <Content Include="Assets\prayers\healing1.jpg" />
+    <Content Include="Assets\prayers\healing2.jpg" />
+    <Content Include="Assets\prayers\healing3.jpg" />
+    <Content Include="Assets\prayers\healing4.jpg" />
+    <Content Include="Assets\prayers\mankind.jpg" />
+    <Content Include="Assets\prayers\mankind1.jpg" />
+    <Content Include="Assets\prayers\mankind2.jpg" />
+    <Content Include="Assets\prayers\marriage.jpg" />
+    <Content Include="Assets\prayers\marriage1.jpg" />
+    <Content Include="Assets\prayers\marriage2.jpg" />
+    <Content Include="Assets\prayers\marriage3.jpg" />
+    <Content Include="Assets\prayers\meeting.jpg" />
+    <Content Include="Assets\prayers\meeting1.jpg" />
+    <Content Include="Assets\prayers\meeting2.jpg" />
+    <Content Include="Assets\prayers\meeting3.jpg" />
+    <Content Include="Assets\prayers\meeting4.jpg" />
+    <Content Include="Assets\prayers\morning1.jpg" />
+    <Content Include="Assets\prayers\morning2.jpg" />
+    <Content Include="Assets\prayers\prayerforamerica.jpg" />
+    <Content Include="Assets\prayers\protection.jpg" />
+    <Content Include="Assets\prayers\protection1.jpg" />
+    <Content Include="Assets\prayers\protection2.jpg" />
+    <Content Include="Assets\prayers\protection3.jpg" />
+    <Content Include="Assets\prayers\protection4.jpg" />
+    <Content Include="Assets\prayers\protection5.jpg" />
+    <Content Include="Assets\prayers\protection6.jpg" />
+    <Content Include="Assets\prayers\protection7.jpg" />
+    <Content Include="Assets\prayers\protection8.jpg" />
+    <Content Include="Assets\prayers\protection9.jpg" />
+    <Content Include="Assets\prayers\qualities.jpg" />
+    <Content Include="Assets\prayers\spiritual.jpg" />
+    <Content Include="Assets\prayers\spiritual1.jpg" />
+    <Content Include="Assets\prayers\steadfastness.jpg" />
+    <Content Include="Assets\prayers\steadfastness1.jpg" />
+    <Content Include="Assets\prayers\steadfastness2.jpg" />
+    <Content Include="Assets\prayers\steadfastness3.jpg" />
+    <Content Include="Assets\prayers\steadfastness4.jpg" />
+    <Content Include="Assets\prayers\teaching.jpg" />
+    <Content Include="Assets\prayers\teaching1.jpg" />
+    <Content Include="Assets\prayers\teaching2.jpg" />
+    <Content Include="Assets\prayers\teaching3.jpg" />
+    <Content Include="Assets\prayers\teaching4.jpg" />
+    <Content Include="Assets\prayers\teaching5.jpg" />
+    <Content Include="Assets\prayers\test.jpg" />
+    <Content Include="Assets\prayers\test1.jpg" />
+    <Content Include="Assets\prayers\test2.jpg" />
+    <Content Include="Assets\prayers\test3.jpg" />
+    <Content Include="Assets\prayers\triumph.jpg" />
+    <Content Include="Assets\prayers\triumph1.jpg" />
+    <Content Include="Assets\prayers\triumph2.jpg" />
+    <Content Include="Assets\prayers\triumph3.jpg" />
+    <Content Include="Assets\prayers\triumph4.jpg" />
+    <Content Include="Assets\prayers\triumph5.jpg" />
+    <Content Include="Assets\prayers\unity.jpg" />
+    <Content Include="Assets\prayers\unity1.jpg" />
+    <Content Include="Assets\prayers\youth1.jpg" />
+    <Content Include="Assets\prayers\youth10.jpg" />
+    <Content Include="Assets\prayers\youth2.jpg" />
+    <Content Include="Assets\prayers\youth3.jpg" />
+    <Content Include="Assets\prayers\youth4.jpg" />
+    <Content Include="Assets\prayers\youth5.jpg" />
+    <Content Include="Assets\prayers\youth6.jpg" />
+    <Content Include="Assets\prayers\youth7.jpg" />
+    <Content Include="Assets\prayers\youth8.jpg" />
+    <Content Include="Assets\prayers\youth9.jpg" />
+    <Content Include="Assets\protection.jpg" />
+    <Content Include="Assets\specialTablet.jpg" />
+    <Content Include="Assets\spritualassembly.jpg" />
+    <Content Include="Assets\spritualqualities.jpg" />
+    <Content Include="Assets\steadfastness.jpg" />
+    <Content Include="Assets\teaching.jpg" />
+    <Content Include="Assets\test.jpg" />
+    <Content Include="Assets\thefund.jpg" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\triumph.jpg" />
+    <Content Include="Assets\unity.jpg" />
+    <Content Include="Assets\youth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

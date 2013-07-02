@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="PhoneApp1.protection"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Canvas Background="White">
+        <Image Source="/Assets/numbers/1.jpg" Width="99" Height="99" Canvas.Left="36" Canvas.Top="45">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection0.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/2.jpg" Width="99" Height="99" Canvas.Left="190" Canvas.Top="45">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection1.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/3.jpg" Width="99" Height="99" Canvas.Top="45" Canvas.Left="355">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection2.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/4.jpg" Width="99" Height="99" Canvas.Left="36" Canvas.Top="221">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection3.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/5.jpg" Width="99" Height="99" Canvas.Left="190" Canvas.Top="221">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection4.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/6.jpg" Width="99" Height="99" Canvas.Left="355" Canvas.Top="221">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection5.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/7.jpg" Width="99" Height="99" Canvas.Left="36" Canvas.Top="395">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection6.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/8.jpg" Width="99" Height="99" Canvas.Left="190" Canvas.Top="395">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection7.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/9.jpg" Width="99" Height="99" Canvas.Left="355" Canvas.Top="395">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection8.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+        <Image Source="/Assets/numbers/10.jpg" Width="99" Height="99" Canvas.Left="36" Canvas.Top="570">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <ec:NavigateToPageAction TargetPage="/protection9.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+
+
+    </Canvas>
+</phone:PhoneApplicationPage>

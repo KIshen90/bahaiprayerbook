@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="PhoneApp1.Page2"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="true">
+
+    <ScrollViewer Background="White" Margin="0,0,0,10">
+        <Canvas Background="White" RenderTransformOrigin="0.49,0.502" Height="2995">
+            <Rectangle Fill="White" Height="593" Stroke="Black" Canvas.Top="2392" Width="480"/>
+            <Rectangle Fill="White" Width="480" Height="3000" Stroke="Black" />
+            <Image Source="/Assets/aid.jpg" DoubleTap="aid" Canvas.Left="32" Height="204" Canvas.Top="31"/>
+            <Image Source="/Assets/aidtest.jpg" DoubleTap="assistance" Canvas.Left="243" Canvas.Top="31" Height="204"/>
+            <Image Source="/Assets/america.jpg" DoubleTap="america" Canvas.Top="243" Height="204" Canvas.Left="32"/>
+            <Image Source="/Assets/youth.jpg" DoubleTap="youth" Canvas.Left="243" Canvas.Top="243" Height="204"/>
+            <Image Source="/Assets/departed.jpg" DoubleTap="departed" Canvas.Top="452" Height="204" Canvas.Left="32"/>
+            <Image Source="/Assets/detachment.jpg" DoubleTap="detachment" Canvas.Left="243" Canvas.Top="452" Height="204"/>
+            <Image Source="/Assets/evening.jpg" DoubleTap="evening" Canvas.Left="32" Canvas.Top="661" Height="204"/>
+            <Image Source="/Assets/families.jpg" DoubleTap="families" Canvas.Left="243" Canvas.Top="661" Height="204"/>
+            <Image Source="/Assets/forgiveness.jpg" DoubleTap="forgiveness" Canvas.Top="879" Height="204" Canvas.Left="32" RenderTransformOrigin="0.456,0.431"/>
+            <Image Source="/Assets/healing.jpg" DoubleTap="healing" Canvas.Left="243" Canvas.Top="879" Height="204"/>
+            <Image Source="/Assets/teaching.jpg" DoubleTap="teaching" Canvas.Top="1097" Height="204" Canvas.Left="32"/>
+            <Image Source="/Assets/marriage.jpg" DoubleTap="marriage" Canvas.Top="1097" Height="204" Canvas.Left="243"/>
+            <Image Source="/Assets/meetings.jpg" DoubleTap="meetings" Canvas.Left="32" Canvas.Top="1314" Height="204"/>
+            <Image Source="/Assets/morning.jpg" DoubleTap="morning" Canvas.Left="243" Canvas.Top="1314" Height="204" RenderTransformOrigin="0.539,0.358"/>
+            <Image Source="/Assets/praiseandgraditute.jpg" DoubleTap="praise" Canvas.Left="32" Canvas.Top="1531" Height="204"/>
+            <Image Source="/Assets/protection.jpg" DoubleTap="protection" Canvas.Left="243" Canvas.Top="1531" Height="204"/>
+            <Image Source="/Assets/spritualassembly.jpg" DoubleTap="assembly" Canvas.Top="1750" Height="204" RenderTransformOrigin="0.466,0.461" Canvas.Left="32"/>
+            <Image Source="/Assets/spritualqualities.jpg" DoubleTap="qualities" Canvas.Left="243" Canvas.Top="1750" Height="204"/>
+            <Image Source="/Assets/steadfastness.jpg" DoubleTap="steadfastness" Canvas.Top="1969" Height="204" Canvas.Left="32"/>
+            <Image Source="/Assets/mankind.jpg" DoubleTap="mankind" Canvas.Left="243" Canvas.Top="1969" Height="204"/>
+            <Image Source="/Assets/test.jpg" DoubleTap="tests" Canvas.Left="32" Canvas.Top="2188" Height="204"/>
+            <Image Source="/Assets/thefund.jpg" DoubleTap="fund" Canvas.Left="243" Canvas.Top="2188" Height="204"/>
+            <Image Source="/Assets/triumph.jpg" DoubleTap="triumph" Canvas.Left="32" Canvas.Top="2409" Height="204"/>
+            <Image Source="/Assets/covenant.jpg" DoubleTap="covenant" Canvas.Left="243" Canvas.Top="2409" Height="204" RenderTransformOrigin="1.116,-2.366"/>
+            <Image Source="/Assets/unity.jpg" DoubleTap="unity" Canvas.Left="32" Canvas.Top="2630" Height="204" RenderTransformOrigin="0.446,-1.545"/>
+        </Canvas>
+    </ScrollViewer>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+</phone:PhoneApplicationPage>
